@@ -1,0 +1,37 @@
+{
+  "name": "blog-with-nodejs",
+  "version": "1.0.0",
+  "description": "blogging platform based on nodejs",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menomanabdulla/blog-with-nodejs.git"
+  },
+  "keywords": [
+    "blogging",
+    "nodejs",
+    "mern",
+    "mern-application",
+    "app",
+    "react",
+    "reactjs\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
+    "\u001b[C\u001b[C\u001b[D\u001b[Dreactjs"
+  ],
+  "author": "menomanabdulla\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[C\u001b\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[: noman abdulla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/menomanabdulla/blog-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/menomanabdulla/blog-with-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4"
+  }
+}
