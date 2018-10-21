@@ -4,15 +4,19 @@ const PORT = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const cors = require('cors');
+
 
 //db connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://nomanabdulla:dbpass123321dbpass@ds135433.mlab.com:35433/rest-blog', { useNewUrlParser: true })
+mongoose.connect(require('./api/config/db').dbURL,
+{ useNewUrlParser: true })
 .then(res => console.log(`DB Connected`))
 .catch(err=>console.log('DB connection error', err))
 
 //middleware
 app.use(morgan('dev'));
+app.use(cors());
 app.use(bodyParser.urlencoded({extends: true}));
 app.use(bodyParser.json());
 
