@@ -19,7 +19,7 @@ const signUpUser = ((req,res,next)=>{
                 gravatarURL: gravatar.url(req.body.email),
                 password: req.body.password
             })
-           return user.save()
+           return user.save();
         }
         
     })

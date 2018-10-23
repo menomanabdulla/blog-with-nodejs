@@ -10,7 +10,7 @@ const PostSchema = new Schema({
     },
     featureImageURL:{
         trim: true,
-        type: string
+        type: String
     },
     content:{
         required: true,
@@ -20,7 +20,7 @@ const PostSchema = new Schema({
     },
     tags:[
         {
-            type: string,
+            type: String,
             trim: true
         }
     ],
@@ -31,15 +31,15 @@ const PostSchema = new Schema({
         linkeDin: Number
     },
     user:{
-        type: mongoose.Schema.types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'User'
     },
     comments: [
         {
-            type:  mongoose.Schema.types.ObjectId,
+            type:  Schema.Types.ObjectId,
             ref: 'Comment'
         }
     ]
 },{timestamps: true});
 
-module.exports = mongoose.model("Post",PostSchema)
+module.exports = mongoose.model("Post",PostSchema);
